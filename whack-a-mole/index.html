@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Whack A Mole!</title>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button class="startButton">Start!</button>
+    <form id="difficulty" class="form">
+      <input type="radio" id="normal" name="difficulty" value="200" checked="checked" />
+      <label for="normal">Normal</label>
+      <input type="radio" id="hard" name="difficulty" value="150" />
+      <label for="hard">Hard</label>
+      <input type="radio" id="expert" name="difficulty" value="100" />
+      <label for="expert">Expert</label>
+    </form>
+    <form id="time" class="form" style="margin-top: 1rem">
+      <input type="radio" id="10sec" name="time" value="10000" checked="checked" />
+      <label for="10sec">10 Sec</label>
+      <input type="radio" id="20sec" name="time" value="20000" />
+      <label for="20sec">20 Sec</label>
+      <input type="radio" id="30sec" name="time" value="30000" />
+      <label for="30sec">30 Sec</label>
+    </form>
+
+    <h1>Whack-a-mole! <span class="score">0</span></h1>
+    <h3 id="timeLeft">Time Left:</h3>
+
+    <div class="game">
+      <div class="hole hole1">
+        <div class="mole"></div>
+      </div>
+      <div class="hole hole2">
+        <div class="mole"></div>
+      </div>
+      <div class="hole hole3">
+        <div class="mole"></div>
+      </div>
+      <div class="hole hole4">
+        <div class="mole"></div>
+      </div>
+      <div class="hole hole5">
+        <div class="mole"></div>
+      </div>
+      <div class="hole hole6">
+        <div class="mole"></div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
